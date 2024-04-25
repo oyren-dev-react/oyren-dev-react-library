@@ -1,11 +1,10 @@
 import {ReactElement} from "react";
+import NavBar from "@/components/navbar/NavBar";
 
 export default function MainLayout({children}: { children: ReactElement | ReactElement[] }) {
     return (
         <div>
-            <header className={"bg-purple-500"}>
-                <h1>My App</h1>
-            </header>
+            <NavBar/>
             <main>
                 {children}
             </main>
